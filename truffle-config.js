@@ -1,8 +1,16 @@
 
-require('dotenv').config();
-const { MNEMONIC, PROJECT_ID } = process.env;
-
 const HDWalletProvider = require('@truffle/hdwallet-provider');
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
+
+// require('dotenv').config();
+// const HDWalletProvider = require('@truffle/hdwallet-provider');
+// const { INFURA_API_KEY, MNEMONIC } = process.env;
+
+// require('dotenv').config();
+// const { MNEMONIC, PROJECT_ID } = process.env;
+
+// const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 module.exports = {
 
@@ -13,12 +21,26 @@ module.exports = {
      network_id: "5777",       // Any network (default: none)
     },
 
-    goerli: {
-      provider: () => new HDWalletProvider(MNEMONIC, `https://goerli.infura.io/v3/${PROJECT_ID}`),
-      network_id: 5,       // Goerli's id
-      confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
-      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    // goerli: {
+    //   provider: () => new HDWalletProvider(MNEMONIC, `https://goerli.infura.io/v3/${PROJECT_ID}`),
+    //   network_id: 5,       // Goerli's id
+    //   confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
+    //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+    //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    // },
+
+    // goerli: {
+    //   provider: () => new HDWalletProvider(MNEMONIC, INFURA_API_KEY),
+    //   network_id: '5',
+    //   gas: 4465030
+    // }
+
+    matic: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.maticvigil.com`),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
     },
   },
 
@@ -63,3 +85,4 @@ module.exports = {
   //   }
   // }
 };
+

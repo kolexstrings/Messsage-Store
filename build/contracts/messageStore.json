@@ -25,7 +25,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getMessage\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"message\",\"type\":\"string\"}],\"name\":\"setMessage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/messageStore.sol\":\"messageStore\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/messageStore.sol\":{\"keccak256\":\"0xe3a0f368d81333ece0b866094aee8beedd581a5616ece2c255e7dff3d72b38c1\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://97535f28ca53958b4bc5f84923375dd18acf85ed54064f53709131eb636d0da9\",\"dweb:/ipfs/QmZfzeFha4SQhF8kpmyfg1dT6GsWPRV57yw1JshsuocAC3\"]}},\"version\":1}",
@@ -5035,12 +5036,19 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x228f44eF8945fF95C92074Cb763dd18333e90164",
-      "transactionHash": "0x6369a8a954e861adf980518ad148933dc0405a785afba76a4c7b57882f24f61d"
+      "address": "0xC743a16CAfF85a88C22689f0fdDC07c453DD5BFC",
+      "transactionHash": "0x7d0f4eaabb944b250e42333c6c97351eb59b816243dafc24d3bfe2e6aa470bb4"
+    },
+    "80001": {
+      "events": {},
+      "links": {},
+      "address": "0x8d1dD128865ac7a0842B34e170ac35861CF35dE8",
+      "transactionHash": "0xb14896bcda4df8723c515732704d62da32c7b58b3523b4f4e932891343195a12"
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-11-17T21:46:38.294Z",
+  "updatedAt": "2022-11-17T23:53:50.391Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
