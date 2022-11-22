@@ -31,7 +31,7 @@ const loadBlockChain = async() => {
 
   const networkId = await web3.eth.net.getId();
 
-  const networkData = messageStore.networks[networkId];
+  const networkData = messageStore.networks('0x598d2C6d846Ce4408bfe6C561431e3C70c7c3C09');
 
   if (networkData) {
 
