@@ -79,8 +79,10 @@ const Dapp = () => {
           <h4>Store Encrypted Messages In One Click</h4>
           </div>
 
-          <div className="logo">
-            <img src="" alt="" />
+          <div className='connect'>
+            <div>
+              <button className='connectButton'>Connct Wallet</button>
+              </div>
           </div>
 
         </div>

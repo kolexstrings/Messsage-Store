@@ -12,8 +12,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-.title {
-  display: flex;
+.connect{
+  display:flex;
+  justify-content: end;
 }
 
 .main {
@@ -36,6 +37,21 @@ body {
   cursor: pointer;
 
 }
+
+.connectButton {
+  margin-top: 15px;
+  padding-inline: 15px;
+  padding-block: 7px;
+  background-color: blue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 15px;
+  color: antiquewhite;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 .input {
   width: 100%;
